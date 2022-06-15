@@ -1,0 +1,40 @@
+
+@import "_var.scss";
+
+//$small: 375px;
+$media-mobile: "only screen and (max-width : 375px)";
+
+body{
+   font-family: 'Manrope', sans-serif;
+   font-size: 13px;
+   min-height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: var(--Light-Grayish-Blue);
+   height: 100vh;
+}
+
+
+.main-container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
