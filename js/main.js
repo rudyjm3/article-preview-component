@@ -14,13 +14,6 @@ shareBtn.addEventListener('click', (event) => {
       i = 0;
       console.log('clicked to close');
    }
-
-   // let insideElement = sharePopup.contains(event.target);
-   // if (sharePopup) {
-   //    return;
-   // } else {
-   //    sharePopup.style.cssText = "transform: scale(0)";
-   // }
    
 });
 // let shareBox = document.getElementsByClassName('share-icon-container')[0];
