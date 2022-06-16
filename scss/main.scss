@@ -1,8 +1,10 @@
 
 @import "_var.scss";
 
-//$medium: 650px;
-$media-mobile: "only screen and (max-width : 650px)";
+//$tablet: 725px;
+$media-tablet: "only screen and (max-width : 725px)";
+//$mobile: 375px;
+$media-mobile: "only screen and (max-width : 375px)";
 
 
 body{
@@ -24,12 +26,12 @@ body{
 .artical-container{
    display: flex;
    justify-content: center;
-   width: 75%;
+   width: 61%;
    height: 100%;
 }
 // Left side of card
 .article-image-wrapper{
-   width: 45%;
+   width: 38%;
    border-radius: 10px 0 0 10px;
    background-image: url('/images/drawers.jpg');
    background-size: cover;
@@ -38,7 +40,7 @@ body{
 }
 // Right side of card
 .article-content-container{
-   width: 55%;
+   width: 62%;
    padding: 30px 40px;
    background-color: white;
    border-radius: 0 10px 10px 0;
@@ -70,7 +72,7 @@ body{
             width: 50px;
             height: 50px;
             border-radius: 50%;
-            margin-right: 10px;
+            margin-right: 15px;
          }
          .author-info{
             .author-name{
@@ -96,6 +98,8 @@ body{
          border-radius: 10px;
          -webkit-box-shadow: 0px 4px 10px -2px rgba(88,88,88,0.52); 
          box-shadow: 0px 4px 10px -2px rgba(88,88,88,0.52);
+         transform: scale(0);
+         transition: all 0.3s ease-in-out;
          p{
             color: var(--Grayish-Blue);
             text-transform: uppercase;
@@ -114,19 +118,27 @@ body{
             line-height: 1.5;
             img{
                width: 18px;
+               transition: all 0.2s ease-in-out;
             }
+            img:hover {
+               background-color: var(--Desaturated-Dark-Blue);
+               padding: 5px;
+               border-radius: 4px;               
+           }
          }
+      }
+      .toggle-share{
+         display: none;
       }
       .share-icon-container::after{
          content: "";
-         position: absolute;
          position: absolute;
          width: 0;
          height: 0;
          border-top: 11px solid var(--Very-Dark-Grayish-Blue);
          border-right: 11px solid transparent;
          border-left: 11px solid transparent;
-         top: 53px;
+         top: 52px;
          right: 113px;
       }
       .share-container{
@@ -136,7 +148,12 @@ body{
          background-color: var(--Light-Grayish-Blue);
          padding: 10px;
          border-radius: 50%;
-         
+         border: none;
+         transition: all 0.2s ease-in-out;
+         cursor: pointer;
+      }
+      .share-container:hover{
+         background-color: var(--Very-Dark-Grayish-Blue);
       }
    }
 }
