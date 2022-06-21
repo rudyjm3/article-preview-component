@@ -1,4 +1,4 @@
-const shareBtn = document.getElementsByClassName('share-container')[0];
+const shareBtn = document.getElementsByClassName('share-btn')[0];
 const sharePopup = document.getElementsByClassName('share-icon-container')[0];
 let i = 0;
 shareBtn.addEventListener('click', (event) => {

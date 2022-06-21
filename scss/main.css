@@ -84,7 +84,6 @@ body {
 
 .article-content-container {
   width: 62%;
-  padding: 30px 40px;
   background-color: white;
   border-radius: 0 10px 10px 0;
 }
@@ -230,7 +229,7 @@ body {
 
 @media only screen and (max-width: 725px) {
   .article-content-container .author-container .share-icon-container {
-    right: -25px;
+    right: 10px;
   }
 }
 
@@ -331,7 +330,7 @@ body {
   }
 }
 
-.article-content-container .author-container .share-container {
+.article-content-container .author-container .share-btn {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -351,13 +350,13 @@ body {
 }
 
 @media only screen and (max-width: 540px) {
-  .article-content-container .author-container .share-container {
+  .article-content-container .author-container .share-btn {
     z-index: 3;
     margin-right: 10px;
   }
 }
 
-.article-content-container .author-container .share-container:hover {
+.article-content-container .author-container .share-btn:hover {
   background-color: var(--Very-Dark-Grayish-Blue);
 }
 

@@ -52,7 +52,7 @@ body{
 // Right side of card
 .article-content-container{
    width: 62%;
-   padding: 30px 40px;
+   // padding: 30px 40px;
    background-color: white;
    border-radius: 0 10px 10px 0;
    @media #{$media-mobile} {
@@ -145,7 +145,7 @@ body{
          transform: scale(0);
          
          @media #{$media-tablet} {
-            right: -25px;
+            right: 10px;
          }
          @media #{$media-mobile} {
             justify-content: flex-start;
@@ -226,7 +226,7 @@ body{
             display: none;
          }
       }
-      .share-container{
+      .share-btn{
          display: flex;
          justify-content: center;
          align-items: center;
@@ -241,7 +241,7 @@ body{
             margin-right: 10px;
          }
       }
-      .share-container:hover{
+      .share-btn:hover{
          background-color: var(--Very-Dark-Grayish-Blue);
       }
    }
